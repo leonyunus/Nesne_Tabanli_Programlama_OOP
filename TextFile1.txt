@@ -1,0 +1,39 @@
+ Nesne Yönelimli Programlama ( OOP ):
+   
+   OOP hemen hemen bütün popüler programlama dilleri tarafýndan desteklenmekte ve kullanýlmaktadýr. C#, Java ve C++ gibi diller günümüzde en çok kullanýlan yazýlým dilleri olmasýnýn yaný sýra, Nesne yönelimli programlamaya sýnýrsýz destek vermektedir
+Bu yapýnýn önemli getirileri þunlardýr: Yazacaðýmýz sýnýflarý birbirinden baðýmsýz olarak geliþtirilebiliriz. Bu sayede program böl, parçala, fethet mantýðý çerçevesinde çok kolay bir þekilde parçalanýrýz ve her parçayý ayrý ayrý ele alýnabiliriz.
+    OOP teknolojisi iþleri parçalara ayýrýp öyle hareket etmemize olanak saðlayan bir teknolojidir. Bir yazýlým dilinde bunun adý sýnýf yani Class ile çalýþmaktýr. OOP ile yazýlmýþ kodlarýmýzda yeni bir nesne oluþtururken mutlaka ama mutlaka bir sýnýftan türetmek zorundayýz bu yüzden iþler daha derli toplu ve düzenli olarak iþler.
+	 OOP özelliklerinden bir tanesi de defalarca kullanacaðýmýz kod bloklarýný bir kere yazýp, ihtiyacýmýz olduðunda tekrar tekrar çaðýrmaktýr. Böylelikle kod ve zaman tasarrufu saðlanmýþ olur. Tabi ki bu özellik ya da bu yaklaþým sadece OOP özelliði deðildir. Yine OOP ile birlikte en çok kullandýðýmýz olaylardan bir tanesi de, uygulamalarýmýz içerisinde yazýlan class'larýn baþka projelere import edilmesi ve orada da kullanýlmasýdýr.
+ 
+
+ -- Nesne Yönelimli Programlamanýn sýnýf türetebilme özelliði sayesinde, bir nesne hiyerarþisi oluþturma imkâný bulunnmaktadýr.--
+
+
+ -----------------------------------------------------------------------------------
+ 
+ Abstract (Soyutlama) metodlarýnýý tanýmlarken aþaðýdaki kurallara dikkat etmeliyiz.
+   1) Abstract metodlar, private olarak tanýmlanamazlar. Çünkü, private metodlar, miras alýnan class lar tarafýndan implement edilemediklerinden dolayý, Abstract yapýsýna ters düþmektedir.
+   2) Abstract metodlar, sadece Abstract classlar içerisinde tanýmlanabilir.
+   3) Abstract metodlar, Virtual olarak tanýmlanamazlar. Her abstract class virtual dýr. Abstract Class ýn da amacý miras alýndýðý class ta implemente edilmek olduðu için Virtual yazýldýðý takdirde hata alýnacaktýr.
+   4) Abstract metodlar, Static olarak tanýmlanamazlar. Statik kavramý, Class özelliði yada metodu olduðu için instance çýkarmaya gerek yoktur. Halbu ki, Statik olmayan metodlar, instance metodlarýdýr. 
+   5) Abstract bir class ta, abstract olmayan static bir metod tanýmlanabiliyorken, miras alýndýðý class ta implemente edilme zorunluluðu olduðundan, Abstract metodlar static olarak tanýmlanamazlar.
+   6) Abstrac metodlarýn gövdesi olamaz. Çünkü onlar sadece miras alýndýðý class larda implement edilebilir.
+
+   -----------------------------------------------------------------------------
+   Encapsulation(Kapsülleme):
+
+   Nesnenin üyelerine yapýlan eriþimi kontrol altýna alýnmasý ve bu kontrolün nesnenin kendisi taradýndan yapýlmasýný saðlamaktýr.Amaç field'larý private yaparak bu olanlara dýþardan eriþimi önlemek ve get set metodlarý ile kontrolü saðlamaktýr...
+
+   ------------------------------------------------------------------------------
+  Polymorphism (Çok Biçimlilik) :
+
+  Bir metodu miras verdiðimiz yerde deðiþtirmek düzenlemek istiyorsak, miras veren sýnýfta o metodu virtual olarak tanýmlamalýyýz.Bu sayede miras alan sýnýfta ayný iþi yapan ama düzenlemek gerektiren metodlarý deðiþtirerek o sýnýfa uygun hale getirebiliriz.Bunuda miras alan sýnýfta override kelimesini ekleyerek saðlarýz...
+
+  --------------------------------------------------------------------------------
+
+  Inheritance (Kaýtým):
+
+Kalýtým (inheritance), bir nesnenin diðer bir nesnenin özelliklerini kazanmasý iþlemidir. Diðer bir deyiþle bir class’ýn baþka bir class’daki property ve method’lara sahip olmasýna inheritance denir.Bu önemlidir, çünkü hiyerarþik sýnýflandýrmayý destekler.
+
+Inheritance bir tane kalýtým verebilirsin ikinciye izin vermez.
+
